@@ -1,0 +1,276 @@
+/* Lesson 6: Section & Hero Section */
+
+/* Reset & Base Styles */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    color: #333;
+    font-family: 'Arial' sans-serif;
+    line-height: 1.6;
+}
+
+/* Container for consistent width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER SECTION */
+.main-header{
+   background-color: #1a9449;
+    padding: 20px 0;
+}
+
+.main-header .container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    transition-property: initial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-nav a:hover{
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.main-nav a:focus{
+    outline: 2px solid #3498db;
+    outline-offset: 4px;    
+}
+    
+/* HERO SECTION */
+
+.hero{
+    background: linear-gradient(90deg, #26f830, #ffffff, #26f830);
+    background-size: 400% 400% ;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-title{
+    transition: transform 0.3s ease;
+}
+
+.hero-title:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(109, 13, 85, 0.89);
+    color: #690472;
+    cursor: crosshair;
+    text-shadow: 0 2px 5px rgb(235, 98, 200) ;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BUTTONS */
+
+.btn{
+    padding: 20px 40px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.features-grid{
+    display: flex;  
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.features-card{
+    flex: 1;
+}
+
+.feature-card{
+    padding: 40px 30px;
+}
+
+.feature-card{
+    background-color: #4da0d8;
+}
+
+.feature-card{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+}
+
+.feature-card{
+    border-radius: 12px;
+}
+
+.feature-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover{
+transform: translateY(-10px);  /*Lift Up 10px*/
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+
+}
+
+.features-grid{
+    display: flex;
+}
+
+.feature-card{
+    flex: 1; /* Makes all cards equal width*/
+}
+
+.section-title{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    background-color: #4da0d8;
+    border-radius: 10px;
+    text-decoration:underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.section-subtitle{
+    display: flex;
+    justify-content: center;
+    background-color: #4e9bce;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* LESSON 10 */
+.about {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image{
+    flex: 1;
+}
+
+.about-text h2{
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+.about-text p{
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-image img {
+    border-radius: 12px;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover, .community-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Lesson 10 */
+.community{
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.community-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.community-text{
+    flex: 1;
+}
+
+.community-image{
+    flex: 1;
+}
+
+.community-text h2{
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.join-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.community-image img{
+    width: 100%;
+    border-radius: 12px;
+}
+.community-image img{
+    width: 100px;
+    height: auto;
+    box-shadow: 0 10px 30x rgba(0,0,0,0.1);
+    transition: transform(1.1);
+}
+
+.community-content {
+    flex-direction: row-reverse;
+}
